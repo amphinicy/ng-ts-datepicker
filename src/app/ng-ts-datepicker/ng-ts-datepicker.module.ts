@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgTsDatepickerDirective } from './ng-ts-datepicker.directive';
+import { NgTsDatepickerDirective, TIME_FORMAT, DATETIME_FORMAT, DATE_FORMAT } from './ng-ts-datepicker.directive';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   exports: [
-    NgTsDatepickerDirective
+    NgTsDatepickerDirective,
+    DATE_FORMAT,
+    DATETIME_FORMAT,
+    TIME_FORMAT
   ],
   declarations: [
     NgTsDatepickerDirective
