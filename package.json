@@ -1,6 +1,6 @@
 {
   "name": "ng-ts-datepicker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -10,6 +10,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author": "Amphinicy Technologies <ng-ts-datepicker@amphinicy.com>",
+  "bugs": {
+    "url": "https://github.com/amphinicy/ng-ts-datepicker/issues",
+    "email": "ng-ts-datepicker@amphinicy.com"
+  },
+  "homepage": "https://github.com/amphinicy/ng-ts-datepicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amphinicy/ng-ts-datepicker"
+  }, 
   "main": "src/app/ng-ts-datepicker/ng-ts-datepicker.module.ts",
   "private": false,
   "dependencies": {
