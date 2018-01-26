@@ -28,7 +28,6 @@ export class NgTsDatepickerDirective implements OnInit, OnChanges {
 
 @Input() date: Moment;
 @Input() options;
-
 @Output() change: EventEmitter<Moment> = new EventEmitter<Moment>();
 @Output() utcChange: EventEmitter<string> = new EventEmitter<string>();
 @Output() click: EventEmitter<any> = new EventEmitter<any>();
