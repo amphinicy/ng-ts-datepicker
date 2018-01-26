@@ -1,13 +1,20 @@
 .input-group.datepicker {
-  display: flex;
-
+  display: inline-block;
+  input {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding-right: 45px;
+  }
   .input-group-addon {
-    flex-basis: 45px;
     cursor: pointer;
+    width: 45px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    bottom: 0;
   }
 
-  &[class*="col-"] {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
