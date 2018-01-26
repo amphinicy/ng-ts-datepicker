@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    ng-ts-datepicker demo
+  </h1>
+</div>
+<div class="input-group">
+  <input class="form-control"
+    ngTsDatepicker
+    [date]="datepickerValue"
+    [options]="datepickerOptions"
+    (change)="dateChange($event)"
+    (click)="dateClick()"
+    (utcChange)="utcChange($event)">
+</div>

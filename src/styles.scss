@@ -1,0 +1,13 @@
+.input-group.datepicker {
+  display: flex;
+
+  .input-group-addon {
+    flex-basis: 45px;
+    cursor: pointer;
+  }
+
+  &[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
