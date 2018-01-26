@@ -5,7 +5,7 @@
 
 ##### Expected behavior
 
-##### Actual behavior (screenshot) 
+##### Actual behavior (screenshot if possible, console error if possible) 
 <!-- In case of bug report -->
 
 ##### Used version
