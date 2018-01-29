@@ -29,7 +29,7 @@ Put it inside a element with input-group class so it gets proper icon displayed:
 <div class="input-group">
   <input class="form-control"
     ngTsDatepicker
-    [date]="datepickerValue"
+    [(date)]="datepickerValue"
     [options]="datepickerOptions"
     (change)="dateChange($event)"
     (click)="dateClick()">

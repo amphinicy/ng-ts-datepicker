@@ -7,7 +7,7 @@
 <div class="input-group">
   <input class="form-control"
     ngTsDatepicker
-    [date]="datepickerValue"
+    [(date)]="datepickerValue"
     [options]="datepickerOptions"
     (dateChange)="dateChange($event)"
     (click)="dateClick()">
@@ -15,4 +15,5 @@
 <div class="event-holder">
   <div>dateChange: {{dateChangeEvent}}</div>
   <div>dateClick: {{dateClickEvent}}</div>
+  <div>datepickerValue: {{datepickerValue}}</div>
 </div>
