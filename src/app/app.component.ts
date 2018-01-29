@@ -14,16 +14,22 @@ export class AppComponent {
   };
   datepickerValue = null;
 
+  dateChangeEvent: string;
+  utcChangeEvent: string;
+  dateClickEvent: string;
+
   dateChange(date) {
     console.log('dateChange', date);
+    this.dateChangeEvent = date;
   }
 
   utcChange(date) {
     console.log('utcChange', date);
+    this.utcChangeEvent = date;
   }
 
   dateClick() {
-    console.log('datetime clicked');
+    this.dateClickEvent = 'datetime clicked';
   }
 
 }
