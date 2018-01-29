@@ -13,12 +13,12 @@ import {
 import * as jqueryImport from 'jquery';
 import 'eonasdan-bootstrap-datetimepicker';
 import { utc, Moment } from 'moment';
-
+import { DATETIME_FORMAT } from './format.enum';
 const jquery = jqueryImport;
 
-export const DATETIME_FORMAT = 'DD/MM/YYYY HH:mm:ss';
-export const DATE_FORMAT = 'DD/MM/YYYY';
-export const TIME_FORMAT = 'DD/MM/YYYY';
+// export const DATETIME_FORMAT = 'DD/MM/YYYY HH:mm:ss';
+// export const DATE_FORMAT = 'DD/MM/YYYY';
+// export const TIME_FORMAT = 'DD/MM/YYYY';
 
 @Directive({
   // tslint:disable-next-line:directive-selector

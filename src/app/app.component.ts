@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DATETIME_FORMAT } from './ng-ts-datepicker/ng-ts-datepicker.directive';
+import { DATETIME_FORMAT } from './ng-ts-datepicker/format.enum';
 
 @Component({
   selector: 'app-root',
