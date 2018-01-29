@@ -1,6 +1,6 @@
 {
   "name": "ng-ts-datepicker",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -59,7 +59,7 @@
     "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
-    "tslint": "~5.3.2",
-    "typescript": "~2.3.3"
+    "tslint": ">=5.3.2",
+    "typescript": ">=2.3.3"
   }
 }
