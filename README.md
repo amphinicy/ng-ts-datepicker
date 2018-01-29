@@ -32,8 +32,7 @@ Put it inside a element with input-group class so it gets proper icon displayed:
     [date]="datepickerValue"
     [options]="datepickerOptions"
     (change)="dateChange($event)"
-    (click)="dateClick()"
-    (utcChange)="utcChange($event)">
+    (click)="dateClick()">
 </div>
 ```
 
@@ -48,8 +47,6 @@ Put it inside a element with input-group class so it gets proper icon displayed:
 
   dateChange(date: date) {}
 
-  utcChange(date: string) {}
-
   dateClick() {}
 ```
 
@@ -61,7 +58,6 @@ Put it inside a element with input-group class so it gets proper icon displayed:
 
 #### Events
 - change - once date is changed it will emit date object
-- utcChange - once date is changed it will emit date string in UTC
 - click - once date picker is clicked with empty value
 
 ## Dependencies
