@@ -9,12 +9,10 @@
     ngTsDatepicker
     [date]="datepickerValue"
     [options]="datepickerOptions"
-    (change)="dateChange($event)"
-    (click)="dateClick()"
-    (utcChange)="utcChange($event)">
+    (dateChange)="dateChange($event)"
+    (click)="dateClick()">
 </div>
 <div class="event-holder">
   <div>dateChange: {{dateChangeEvent}}</div>
-  <div>utcChange: {{utcChangeEvent}}</div>
   <div>dateClick: {{dateClickEvent}}</div>
 </div>

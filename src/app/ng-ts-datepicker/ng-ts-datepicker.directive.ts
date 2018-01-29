@@ -12,7 +12,7 @@ import {
 
 import * as jqueryImport from 'jquery';
 import 'eonasdan-bootstrap-datetimepicker';
-import { utc, Moment } from 'moment';
+import { Moment } from 'moment';
 import { DATETIME_FORMAT } from './format.enum';
 const jquery = jqueryImport;
 
@@ -35,11 +35,7 @@ export class NgTsDatepickerDirective implements OnInit, OnChanges {
   /**
    * Emits date selected from datepicker
    */
-  @Output() change: EventEmitter<Moment> = new EventEmitter<Moment>();
-  /**
-   * Emits string in UTC based on value selected in datepicker
-   */
-  @Output() utcChange: EventEmitter<string> = new EventEmitter<string>();
+  @Output() dateChange: EventEmitter<Moment> = new EventEmitter<Moment>();
   /**
    * Emits empty value once datepicker is clicked
    */
@@ -57,13 +53,6 @@ export class NgTsDatepickerDirective implements OnInit, OnChanges {
   constructor(
     private el: ElementRef
   ) {}
-
-  formatToUtc(date: Moment) {
-    if (!date) {
-      return;
-    }
-    return utc(date, this.internalOptions.format).format(this.internalOptions.format);
-  }
 
   ngOnInit(): void {
     // this.internalOptions = this.lodash.assign(this.internalOptions, this.defaultOptions, this.options);
@@ -91,8 +80,7 @@ export class NgTsDatepickerDirective implements OnInit, OnChanges {
 
       if (e.date !== this.date) {
         this.date = e.date;
-        this.change.emit(e.date);
-        this.utcChange.emit(this.formatToUtc(e.date));
+        this.dateChange.emit(e.date);
       }
     });
 
