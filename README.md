@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/amphinicy/ng-ts-datepicker.svg?branch=master)](https://travis-ci.org/amphinicy/ng-ts-datepicker)
+
 # NgTsDatepicker
 
 Angular (4+) directive which wraps http://eonasdan.github.io/bootstrap-datetimepicker/ component.
