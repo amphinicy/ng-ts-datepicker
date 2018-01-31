@@ -41,21 +41,20 @@ export class NgTsDatepickerDirective implements OnInit, OnChanges {
    */
   @Output() click: EventEmitter<any> = new EventEmitter<any>();
 
-  private dpElement;
-  private defaultOptions: any = {
+  dpElement;
+  defaultOptions: any = {
     allowInputToggle: true,
     format: DATETIME_FORMAT,
     preventInputKeys: true
   };
-  private hasParent = false;
-  private internalOptions: any = {};
+  hasParent = false;
+  internalOptions: any = {};
 
   constructor(
     private el: ElementRef
   ) {}
 
   ngOnInit(): void {
-    // this.internalOptions = this.lodash.assign(this.internalOptions, this.defaultOptions, this.options);
     this.internalOptions = Object.assign(this.internalOptions, this.defaultOptions, this.options);
 
     const $parent = jquery(this.el.nativeElement.parentNode);
