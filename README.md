@@ -4,6 +4,8 @@
 
 Angular (4+) directive which wraps http://eonasdan.github.io/bootstrap-datetimepicker/ component.
 
+![image](https://user-images.githubusercontent.com/2838038/35628522-73da393c-069c-11e8-953d-0bbc3b6ac785.png)
+
 ## Installation
 
 `npm install ng-ts-datepicker --save`
