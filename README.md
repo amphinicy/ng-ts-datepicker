@@ -54,6 +54,10 @@ Put it inside a element with input-group class so it gets proper icon displayed:
   dateClick() {}
 ```
 
+#### Styles
+
+Add .css file from `ng-ts-datepicker/styles.min.css` (or add it to script array in `.angular-cli.json` if you are using it)
+
 #### Properties
 
 - date - initial date value
@@ -73,5 +77,7 @@ They are already in package.json, but here is a list:
 - moment (https://momentjs.com/)
 
 ## Release notes
+- 1.2.0
+  - added styles.min.css
 - 1.0.0
   - first stable version
