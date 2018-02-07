@@ -25,6 +25,10 @@ import { NgTsDatepickerModule } from 'ng-ts-datepicker';
   ]
 ```
 
+#### Styles
+
+Add .css file from `ng-ts-datepicker/styles.min.css` (or add it to `styles` array in `.angular-cli.json` if you are using it)
+
 ### Use component
 
 Put it inside a element with input-group class so it gets proper icon displayed:
@@ -53,10 +57,6 @@ Put it inside a element with input-group class so it gets proper icon displayed:
 
   dateClick() {}
 ```
-
-#### Styles
-
-Add .css file from `ng-ts-datepicker/styles.min.css` (or add it to script array in `.angular-cli.json` if you are using it)
 
 #### Properties
 
