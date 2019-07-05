@@ -1,12 +1,11 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { NgTsDatepickerDirective } from './ng-ts-datepicker.directive';
 import { NO_ERRORS_SCHEMA, Component, ViewChild } from '@angular/core';
-import { element } from 'protractor';
 import { By } from '@angular/platform-browser';
-import { DATETIME_FORMAT } from '../../../public_api';
 
 import * as jqueryImport from 'jquery';
 import * as moment from 'moment';
+import { DATETIME_FORMAT } from './format.enum';
 
 const jquery = jqueryImport;
 
@@ -21,7 +20,7 @@ const jquery = jqueryImport;
             </div>`
 })
 class TestComponent {
-  @ViewChild(NgTsDatepickerDirective) directive: NgTsDatepickerDirective;
+  @ViewChild(NgTsDatepickerDirective, {static: false}) directive: NgTsDatepickerDirective;
   datepickerOptions = {
     allowInputToggle: false,
     preventInputKeys: false

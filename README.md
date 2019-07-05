@@ -2,7 +2,7 @@
 
 # NgTsDatepicker
 
-Angular (4+) directive which wraps http://eonasdan.github.io/bootstrap-datetimepicker/ component.
+Angular (6+) directive which wraps http://eonasdan.github.io/bootstrap-datetimepicker/ component.
 
 ![image](https://user-images.githubusercontent.com/2838038/35628522-73da393c-069c-11e8-953d-0bbc3b6ac785.png)
 
@@ -77,6 +77,8 @@ They are already in package.json, but here is a list:
 - moment (https://momentjs.com/)
 
 ## Release notes
+- 1.3.0
+  - **Breaking change**: Added support for Angular6+. Now only support Angular6+, for below version, use 1.2.0
 - 1.2.0
   - added styles.min.css
 - 1.0.0
